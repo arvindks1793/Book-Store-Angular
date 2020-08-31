@@ -94,7 +94,7 @@ Unit Testing: I have used JUnit, Mockito and MockMVC to test all the above RESTf
 
  Test Class : BookStorTest.java
   
-   Databse : I have used the inmemory H2 Databse provided by Spring boot. As advised I have included all the fileds given in the requirement. Book id is the primary key  in the table. I have used Spring Data JPA to constrct the Databse abd tables.
+   Database : I have used the inmemory H2 Databse provided by Spring boot. As advised I have included all the fileds given in the requirement. Book id is the primary key  in the table. I have used Spring Data JPA to constrct the Databse abd tables.
    
    Database Colunmns:
    
