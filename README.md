@@ -13,8 +13,11 @@ The Back-end application exposes three RESTful API end points for the clients to
 1.	To get the list of Books:
 
      Method name: getAllBooks()
+     
      Resource URI: /books
+     
      Request Type: GET
+     
      RequestParams:  pageNo(Page Number), pageSize, sortBy and sortDirection
 
 The bookRepository extends PagingAndSorting repository which enables Pagination and Sorting in the server side. These parameters are optional and have a default value if the URL does not contain them.
@@ -30,15 +33,21 @@ The method returns the Response code as 200 and Response status OK for success.
 2.	To get a book using id:
 
 Method name: getABookById()
+
 Resource URI: /books/{id}
+
 Request Type: GET
+
 Pathvariable: id
 
 URL for getBookById():
+
 http://localhost:8089/bookstoreservice/books/1
 
 Success :
+
 Response Code :200
+
 Response Status : OK
 
 Failure:
@@ -64,11 +73,13 @@ http://localhost:8089/bookstoreservice/books/1
 Success :
 
 Response Code :200
+
 Response Status : Ok
 
 Failure:
 
 Response Code:404
+
 Response Status: “Book with the id is not found”
 
 Note : The bookstoreservice appearing in the URL is the name of the application war file. Please use the same name and change the port accordingly while deploying in Tomcat. The .war file is present in the target folder of the application.
