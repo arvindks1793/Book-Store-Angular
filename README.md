@@ -27,27 +27,37 @@ URLs for getAllBook ():
 The method returns the Response code as 200 and Response status OK for success.
 
 2.	To get a book using id:
+
 Method name: getABookById()
 Resource URI: /books/{id}
 Request Type: GET
 Pathvariable: id
+
 URL for getBookById():
 http://localhost:8089/bookstoreservice/books/1
+
 Success :
 Response Code :200
 Response Status : OK
+
 Failure:
 Response Code:404
+
 Response Status: “Book with the id is not found”
+
  If a resource is not found, the method throws ‘BookNotFoundException’ (RuntimeException) and the exception is handled using the @ControllerAdvice which sends the corresponding error message.
  
 3.	To delete a Book using id:
+
 Method name: deleteBookById()
 Resource URI: /books/{id}
 Request Type: DELETE
 Pathvariable: id
+
 URL for deleteById()
+
 http://localhost:8089/bookstoreservice/books/1
+
 Success :
 Response Code :200
 Response Status : Ok
