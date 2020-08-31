@@ -61,20 +61,13 @@ Paste the contents of the dist folder into the bookstore folder that we created 
 
 Apllication will start automatically.
 
+Please make sure the base href in index.html is "bookstore"
+
+<base href="bookstore">
+
 Use this url to get the landing page : http://localhost:8089/bookstore
 
 URL change in index.html for HTTP calls:
-
-index.html 
-
-<script type="text/javascript">
-    var cfgApiBaseUrl = "http://localhost:8097";
-    /*
-    IDE: http://localhost:8097"
-    Tomcat1: http://localhost:8089/bookstoreservice
-    */
-    window.cfgApiBaseUrl = cfgApiBaseUrl;
-  </script>
 
 Please change the URL to  http://localhost:8089/bookstoreservice when deploying in Tomcat
 
