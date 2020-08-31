@@ -1,0 +1,24 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<tr
+  scope="col" *ngFor="let column of sortableColumns"
+  (click)="sort(column)">
+  {{column.title}}
+  <span *ngIf="column.direction != null">
+    <span *ngIf="column.direction=='asc'; then sortAscending else sortDescending"></span>
+  </span>
+</tr>
+
+
+<ng-template #sortDescending>
+  <i class="material-icons">
+    arrow_drop_down
+  </i>
+</ng-template>
+
+<ng-template #sortAscending>
+  <i class="material-icons">
+    arrow_drop_up
+  </i>
+</ng-template>

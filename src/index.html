@@ -3,7 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>BookStoreApp</title>
-  <base href="/">
+  <base href="bookstore">
+  <script type="text/javascript">
+    var cfgApiBaseUrl = "http://localhost:8089/bookstoreservice";
+    /*
+    IDE: http://localhost:8097"
+    Tomcat1: http://localhost:8089/bookstoreservice
+    */
+    window.cfgApiBaseUrl = cfgApiBaseUrl;
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
