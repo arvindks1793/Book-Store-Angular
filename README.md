@@ -47,7 +47,7 @@ Major problems I faced were during the implementation of sorting and pagination 
 
 Improvements: 
 
-One of the important changes I would consider is to change the way the sorting icons look at the moment. The sorting icons are seoera I would combine them with the table headers which will be easy for the users and improve the cosmetic look of the page.
+One of the important changes I would consider is to change the way the sorting icons look at the moment. The sorting icons are separately I would want to combine them with the table headers which will be easy for the users and improve the cosmetic look of the page. Currently, I have included random pictures from a site similar placeholder.com. As an improvement I would want to store the images in Database and retrieve them from the Databse. The pictures can be stores as bytes in Databse and can be retrived durin the HTTP calls.
 
 Build Steps and URL :
 
@@ -68,14 +68,13 @@ Please make sure the base href in index.html is "bookstore"
 Use this url to get the landing page : http://localhost:8089/bookstore
 
 
-
  URL change in index.html for HTTP calls:
 
 Please change the URL to  http://localhost:8089/bookstoreservice when deploying in Tomcat
 
 var cfgApiBaseUrl - This variable holds the URL for Development and Production. We can change it as per our requirement.
 
-Current URL (Development environment):
+ Current URL (Development environment):
 
  var cfgApiBaseUrl = "http://localhost:8097";
  
