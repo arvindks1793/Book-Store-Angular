@@ -59,13 +59,15 @@ Create a folder bookstore inside the webapps folder of Tomcat server
 
 Paste the contents of the dist folder into the bookstore folder that we created in webapps folder of Tomcat
 
-Apllication will start automatically.
+Application will start automatically.
 
 Please make sure the base href in index.html is "bookstore"
 
 <base href="bookstore">
 
 Use this url to get the landing page : http://localhost:8089/bookstore
+
+
 
 URL change in index.html for HTTP calls:
 
