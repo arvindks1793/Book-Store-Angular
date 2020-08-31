@@ -11,6 +11,7 @@ Technologies used: Java, Spring Boot, Spring Data JPA, JUNit, Mockito and Maven.
 The Back-end application exposes three RESTful API end points for the clients to consume.
 
 1.	To get the list of Books:
+
      Method name: getAllBooks()
      Resource URI: /books
      Request Type: GET
@@ -50,7 +51,9 @@ Response Status: “Book with the id is not found”
 3.	To delete a Book using id:
 
 Method name: deleteBookById()
+
 Resource URI: /books/{id}
+
 Request Type: DELETE
 Pathvariable: id
 
@@ -59,9 +62,12 @@ URL for deleteById()
 http://localhost:8089/bookstoreservice/books/1
 
 Success :
+
 Response Code :200
 Response Status : Ok
+
 Failure:
+
 Response Code:404
 Response Status: “Book with the id is not found”
 
@@ -70,18 +76,25 @@ Note : The bookstoreservice appearing in the URL is the name of the application 
 Unit Testing: I have used JUnit, Mockito and MockMVC to test all the above RESTful end points. These test cases check the results returned, the response status, response code, the number of interactions with method and the Content type. I have mocked the Service  and verified it with the data returned from the Database. These tests run automatically during the build process. All the test cases have passed for me . Below are the three test cases to check all the three available RESTful APIs.
 
 1.	test_get_all_success() for getAllBooks()
+
 2.	test_get_book_by_id_success() for getBookById()
+
 3.	test_delete_book_success() for deleteBookById()
-  Class : BookStorTest.java
+
+ Test Class : BookStorTest.java
   
    Databse : I have used the inmemory H2 Databse provided by Spring boot. As advised I have included all the fileds given in the requirement. Book id is the primary key  in the table. I have used Spring Data JPA to constrct the Databse abd tables.
    
    Database Colunmns:
    
    id - Primary key
+   
    Title
+   
    AuthornName
+   
    Category
+   
    Publication Date
    
    Improvements (If had more time):
