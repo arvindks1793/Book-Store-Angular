@@ -35,7 +35,7 @@ Using the Delete button in the Book list page the user can delete individual boo
 
 Sorting:
 
-Just above the table of List of Books, there are options to sort the book list. The user can sort list using the sorting options provided. The actual sorting is taken care at the back-end, the UI(icons and setting the parameters for the URL requests) and rendering part is developed using Angular.
+Just above the table of List of Books, there are options to sort the book list. The user can sort list using the sorting options provided. The actual sorting is taken care at the back-end, the UI(icons and setting the parameters for the URL requests) and rendering part is developed using Angular. For each click of the sor button there is a HTTP call to the server. The URL os formed based on the sorting option selected by the user and the page in which the user is currently on.
 
 Pagination:
 
@@ -47,7 +47,7 @@ Major problems I faced were during the implementation of sorting and pagination 
 
 Improvements: 
 
-One of the important changes I would consider is to change the way the sorting icons look at the moment. The sorting icons are separately I would want to combine them with the table headers which will be easy for the users and improve the cosmetic look of the page. Currently, I have included random pictures from a site similar placeholder.com. As an improvement I would want to store the images in Database and retrieve them from the Databse. The pictures can be stores as bytes in Databse and can be retrived durin the HTTP calls.
+One of the important changes I would consider is to change the way the sorting icons look at the moment. The sorting icons are separately placed above the headers, I would want to combine them with the table headers which will be easy for the users and improve the cosmetic look of the page. Currently, I have included random pictures from a web site similar placeholder.com. As an improvement I would want to store the images in Database and retrieve them from the Databse. The pictures can be stores as bytes in Databse and can be retrived during the HTTP calls.
 
 Build Steps and URL :
 
