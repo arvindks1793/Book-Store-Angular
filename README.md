@@ -61,10 +61,9 @@ Paste the contents of the dist folder into the bookstore folder that we created 
 
 Application will start automatically in Tomcat.
 
-Please make sure the base href in index.html is "bookstore"
+Please make sure the base href in index.html is "bookstore"  --  <base href="bookstore">
 
 
- <base href="bookstore">
 
 Use this url to get the landing page of the Angular application : http://localhost:8089/bookstore
 
@@ -75,7 +74,7 @@ Note: Change the localhost to your IP address and the port number accordingly
 
 Please change the URL to  http://localhost:8089/bookstoreservice when deploying in Tomcat
 
-var cfgApiBaseUrl - This variable holds the URL for Development and Production. We can change it as per our requirement.
+var cfgApiBaseUrl (in index.html) - This variable holds the URL for Development and Production. We can change it as per our requirement.
 
  Current URL (Development environment):
 
