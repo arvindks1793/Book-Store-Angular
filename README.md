@@ -35,11 +35,11 @@ Using the Delete button in the Book list page the user can delete individual boo
 
 Sorting:
 
-Just above the table of List of Books, there are options to sort the book list. The user can sort list using the sorting options provided. The actual sorting is taken care at the back-end, the UI(icons and setting the parameters for the URL requests) and rendering part is developed using Angular. For each click of the sor button there is a HTTP call to the server. The URL os formed based on the sorting option selected by the user and the page in which the user is currently on.
+Just above the table of List of Books, there are options to sort the book list. The user can sort list using the sorting options provided. The actual sorting is taken care at the back-end, the UI(icons and setting the parameters for the URL requests) and rendering part is developed using Angular. For each click of the sort button there is a HTTP call to the server. The URL os formed based on the sorting option selected by the user and the page in which the user is currently on.
 
 Pagination:
 
-I have used Angular's ngx-pagination to implement pagination in this application. The pagination fetaure displays the number of pages, which can be changed by the user and the total number of books per change. The default for the total number if books per page is five, but the user can modify it to 10 or 15. The actual pagination implementation is done at the server using PagingAndSoerting repository.
+I have used Angular's ngx-pagination to implement pagination in this application. The pagination fetaure displays the number of pages, which can be changed by the user and the total number of books per page. The default total number of books per page is five, but the user can modify it to 10 or 15. The actual pagination implementation is done at the server using PagingAndSoerting repository.
 
 Problems Faced :
 
@@ -55,20 +55,23 @@ To build - ng build
 
 After ng build, a new dist folder gets created in the application folder.
 
-Create a folder bookstore inside the webapps folder of Tomcat server
+Create a folder 'bookstore' inside the webapps folder of Tomcat server
 
 Paste the contents of the dist folder into the bookstore folder that we created in webapps folder of Tomcat
 
-Application will start automatically.
+Application will start automatically in Tomcat.
 
 Please make sure the base href in index.html is "bookstore"
 
-<base href="bookstore">
 
-Use this url to get the landing page : http://localhost:8089/bookstore
+ <base href="bookstore">
+
+Use this url to get the landing page of the Angular application : http://localhost:8089/bookstore
+
+Note: Change the localhost to your IP address and the port number accordingly
 
 
- URL change in index.html for HTTP calls:
+ URL change in index.html to enable HTTP calls:
 
 Please change the URL to  http://localhost:8089/bookstoreservice when deploying in Tomcat
 
